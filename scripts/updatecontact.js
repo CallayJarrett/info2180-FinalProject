@@ -41,7 +41,7 @@ window.addEventListener("load", (event)=>{
                         switchtoother.innerText = switchtoother.textContent = resp.substring(resp.indexOf('*') + 1);
                         })
 
-                        let contactUrl = new URL('http://localhost/info2180-finalproject/scripts/viewcontact.php');
+                        let contactUrl = new URL('http://localhost/info2180-FinalProject/scripts/viewcontact.php');
                         let params2 = {contactid: assigntomeval};
                         contactUrl.search = new URLSearchParams(params2).toString();
                         fetch(contactUrl, {

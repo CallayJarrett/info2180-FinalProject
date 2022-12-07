@@ -12,7 +12,7 @@ window.addEventListener("load",event=>{
         .then(resp=>{
             if (resp == "CLEAR"){
                 combo.innerHTML ="";
-                location.replace("http://localhost/info2180-finalproject/");
+                location.replace("http://localhost/info2180-FinalProject/");
             }
         })
     }

@@ -100,7 +100,7 @@ window.addEventListener("load", event => {
                     changearea.style.width="85%";
                     changearea.innerHTML = "";
                     footer.classList.add("hide");
-                    const listUrl = new URL('http://localhost/info2180-finalproject/scripts/homepage.php');
+                    const listUrl = new URL('http://localhost/info2180-FinalProject/scripts/homepage.php');
                     let params = {btn: "all"};
                     listUrl.search = new URLSearchParams(params).toString();
                     fetch(listUrl, {method : 'GET'})

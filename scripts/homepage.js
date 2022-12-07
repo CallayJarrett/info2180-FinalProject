@@ -10,7 +10,7 @@ window.addEventListener("load",event=>{
     let filterurl = "";
     home.onclick= event=>{
         changearea.innerHTML="";
-        const listUrl = new URL('http://localhost/info2180-finalproject/scripts/homepage.php');
+        const listUrl = new URL('http://localhost/info2180-FinalProject/scripts/homepage.php');
         let params = {btn: "all"};
         listUrl.search = new URLSearchParams(params).toString();
         fetch(listUrl, {method : 'GET'})
@@ -26,7 +26,7 @@ window.addEventListener("load",event=>{
         contactlink.onclick = event => {
             event.preventDefault();
             let id = issuelink.getAttribute("href");
-            let contactUrl = new URL('http://localhost/info2180-finalproject/scripts/viewcontact.php');
+            let contactUrl = new URL('http://localhost/info2180-FinalProject/scripts/viewcontact.php');
             let params = {contactid: id};
             contactUrl.search = new URLSearchParams(params).toString();
             fetch(contactUrl, {
@@ -62,7 +62,7 @@ window.addEventListener("load",event=>{
                 })
             }
             filtersupport.onclick =(event)=>{
-                filterurl = new URL('http://localhost/info2180-finalproject/scripts/homepage.php');
+                filterurl = new URL('http://localhost/info2180-FinalProject/scripts/homepage.php');
                 let params = {btn: "Support"};
                 filterurl.search = new URLSearchParams(params).toString();
                 fetch(filterurl, {method : 'GET'})
@@ -74,7 +74,7 @@ window.addEventListener("load",event=>{
         
             }
             filtersalesleads.onclick =(event)=>{
-                filterurl = new URL('http://localhost/info2180-finalproject/scripts/homepage.php');
+                filterurl = new URL('http://localhost/info2180-FinalProject/scripts/homepage.php');
                 let params = {btn: "SalesLeads"};
                 filterurl.search = new URLSearchParams(params).toString();
                 fetch(filterurl, {method : 'GET'})
@@ -86,7 +86,7 @@ window.addEventListener("load",event=>{
         
             }
             filterassigned.onclick =(event)=>{
-                filterurl = new URL('http://localhost/info2180-finalproject/scripts/homepage.php');
+                filterurl = new URL('http://localhost/info2180-FinalProject/scripts/homepage.php');
                 let params = {btn: "assigned"};
                 filterurl.search = new URLSearchParams(params).toString();
                 fetch(filterurl, {method : 'GET'})
@@ -99,7 +99,7 @@ window.addEventListener("load",event=>{
             }
 
             filterall.onclick =(event)=>{
-                filterurl = new URL('http://localhost/info2180-finalproject/scripts/homepage.php');
+                filterurl = new URL('http://localhost/info2180-FinalProject/scripts/homepage.php');
                 let params = {btn: "all"};
                 filterurl.search = new URLSearchParams(params).toString();
                 fetch(filterurl, {method : 'GET'})
